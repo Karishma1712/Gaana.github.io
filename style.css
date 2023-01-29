@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color:sienna;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    background-color: black;
+    color: aliceblue;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+width: 77px;    
+padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72vh; /*so that bottom comes down*/
+    background-color: black;
+    color: white;
+    font-family:  'Varela Round', sans-serif;
+    display: flex;
+    margin: 10px 200px;
+    border-radius: 12px;
+    padding: 40px;
+    background-image: url("bg.jpg"); 
+    
+}
+.bottom{
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    color: aliceblue;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+#myProgressBar{
+    width: 150vh;
+    cursor: pointer;
+}
+.icons{
+ margin-top: 12px;
+}
+.icons i{
+    padding: 4px;
+    cursor: pointer;
+}
+.songItemContainer{
+   margin-top: 30px;
+}
+.songItem{
+   height: 50px;
+   display: flex;
+   width: 60vh;
+   background-color:black;
+   color: white;
+   margin: 5px 0px;
+   border-radius: 10px;
+   justify-content: space-between;
+   align-items: center;
+}
+.songItem img{
+    width: 45px;
+    margin: 0 20px;
+    border-radius: 10px;
+ }
+
+.timestamp{
+    display: flex;
+    padding: 15px 23px;
+    margin-left: 108px;
+   align-items: right;
+    cursor: pointer;
+    
+}
+
+ 
+ .songInfo{
+     position: absolute;
+     left:15vw;
+     margin-bottom: 10px;
+     font-family:  'Varela Round', sans-serif;
+
+ }
+ .songInfo img{
+     opacity: 0;
+     transition: opacity 0.4s ease-in;
+ }
